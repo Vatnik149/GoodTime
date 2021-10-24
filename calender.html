@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="taski.css">
+    <link rel="stylesheet" href="calender.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+          <i class='bx bxl-c-plus-plus icon'></i>
+            <div class="logo_name">Distellery</div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav-list">
+          <li>
+              <i class='bx bx-search' ></i>
+             <input type="text" placeholder="Search...">
+             <span class="tooltip">Search</span>
+          </li>
+          <li>
+           <a href="index.html">
+             <i class='bx bx-user' ></i>
+             <span class="links_name">Профиль</span>
+           </a>
+           <span class="tooltip">Профиль</span>
+         </li>
+        
+         <li>
+           <a href="teams.html">
+             <i class='bx bx-pie-chart-alt-2' ></i>
+             <span class="links_name">Сотрудники</span>
+           </a>
+           <span class="tooltip">Сотрудники</span>
+         </li>
+          <li>
+           <a href="task.html">
+             <i class='bx bx-heart' ></i>
+             <span class="links_name">Таски</span>
+           </a>
+           <span class="tooltip">Таски</span>
+         </li>
+         <li>
+           <a href="calender.html">
+             <i class='bx bx-cog' ></i>
+             <span class="links_name">Календарь</span>
+           </a>
+           <span class="tooltip">Календарь</span>
+         </li>
+         <li class="profile">
+             <div class="profile-details">
+               <img src="profile.jpg" alt="profileImg">
+               <div class="name_job">
+                 <div class="name">Prem Shahi</div>
+                 <div class="job">Web designer</div>
+               </div>
+             </div>
+             <i class='bx bx-log-out' id="log_out" ></i>
+         </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-12 col-md-12 col-sm-12">
+      <iframe class="iframeAdaptive" src="https://calendar.google.com/calendar/embed?src=6562qmc5ihgbj1ojh4pnec8dig%40group.calendar.google.com&ctz=Europe%2FMoscow" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+     
+     
+      <script>
+      let sidebar = document.querySelector(".sidebar");
+      let closeBtn = document.querySelector("#btn");
+      let searchBtn = document.querySelector(".bx-search");
+    
+      closeBtn.addEventListener("click", ()=>{
+        sidebar.classList.toggle("open");
+        menuBtnChange();//calling the function(optional)
+      });
+    
+      searchBtn.addEventListener("click", ()=>{ 
+        sidebar.classList.toggle("open");
+        menuBtnChange(); //calling the function(optional)
+      });
+    
+      function menuBtnChange() {
+       if(sidebar.classList.contains("open")){
+         closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+       }else {
+         closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+       }
+      }
+      </script>
+      <script src="task.js"></script>
+      <script src="js.js"></script>
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+     <script src="js/bootstrap.js"></script>
+    
+</body>
+</html>

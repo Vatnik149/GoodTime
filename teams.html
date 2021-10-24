@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="taski.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="teams.css">
+    <title>Disteller</title>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus icon'></i>
+        <div class="logo_name">Distellery</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+       <a href="index.html">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">Профиль</span>
+       </a>
+       <span class="tooltip">Профиль</span>
+     </li>
+    
+     <li>
+       <a href="teams.html">
+         <i class='bx bx-pie-chart-alt-2' ></i>
+         <span class="links_name">Сотрудники</span>
+       </a>
+       <span class="tooltip">Сотрудники</span>
+     </li>
+      <li>
+       <a href="task.html">
+         <i class='bx bx-heart' ></i>
+         <span class="links_name">Таски</span>
+       </a>
+       <span class="tooltip">Таски</span>
+     </li>
+     <li>
+       <a href="calender.html">
+         <i class='bx bx-cog' ></i>
+         <span class="links_name">Календарь</span>
+       </a>
+       <span class="tooltip">Календарь</span>
+     </li>
+     <li class="profile">
+         <div class="profile-details">
+           <img src="profile.jpg" alt="profileImg">
+           <div class="name_job">
+             <div class="name">Prem Shahi</div>
+             <div class="job">Web designer</div>
+           </div>
+         </div>
+         <i class='bx bx-log-out' id="log_out" ></i>
+     </li>
+    </ul>
+  </div>
+
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+    <aside>
+      <h3>Сфера</h3>
+      <div>
+        <div><input type="checkbox" name="position" value="design" id="guard"><label for="design">design</label></div>
+        <div><input type="checkbox" name="position" value="developer" id="forward"><label for="developer">developer</label></div>
+        <div><input type="checkbox" name="position" value="manager" id="center"><label for="manager">manager</label></div>
+      </div>
+      <h3>Навыки</h3>
+      <div>
+        <div><input type="checkbox" name="conference" value="boot" id="east"><label for="boot">Bootstrap</label></div>
+        <div><input type="checkbox" name="conference" value="angul" id="west"><label for="angul">Angular</label></div>
+        <div><input type="checkbox" name="conference" value="react" id="west"><label for="react">React</label></div>
+        <div><input type="checkbox" name="conference" value="html" id="west"><label for="html">HTML</label></div>
+        <div><input type="checkbox" name="conference" value="css" id="west"><label for="css">CSS</label></div>
+        <div><input type="checkbox" name="conference" value="cs" id="west"><label for="cs">C#</label></div>
+      </div>
+      <h3>Разное</h3>
+      <div>
+        <div><input type="checkbox" name="nbaTeam" value="full" id="bos"><label for="full">Full-Stack</label></div>
+        <div><input type="checkbox" name="nbaTeam" value="front" id="cle"><label for="front">Frontend</label></div>
+        <div><input type="checkbox" name="nbaTeam" value="back" id="back"><label for="back">Backend</label></div>
+        <div><input type="checkbox" name="nbaTeam" value="des" id="det"><label for="des">Design</label></div>
+        <div><input type="checkbox" name="nbaTeam" value="desk" id="gsw"><label for="desk">Desktop developer</label></div>
+        <div><input type="checkbox" name="nbaTeam" value="mob" id="hou"><label for="hou">Mobile developer</label></div>
+        <div><input type="checkbox" name="nbaTeam" value="man" id="hou"><label for="man">Manager</label></div>
+      </div>
+      <br>
+      
+    </aside>
+    </div>
+
+
+
+    <div class="col-lg-4 col-md-6 col-sm-12">
+    <main>
+      <section>
+        
+        <div class="player developer full boot html csstarting steph">
+           <a href="profile-zaika.html">
+            <div class="card">
+                <img src="img/img_avatar2.png" alt="Avatar" style="width:20%">
+                <div class="container">
+                  <h4><b>Заика Дмитрий</b></h4> 
+                  <p>Full-Stack</p> 
+                </div>
+                
+              </div>
+              </a>
+        </div>
+        <div class="player developer front css html boot starting steph">
+           <a href="profile-ark.html">
+            <div class="card">
+                <img src="img/img_avatar2.png" alt="Avatar" style="width:20%">
+                <div class="container">
+                  <h4><b>Архипов Кирилл</b></h4> 
+                  <p>Frontend</p> 
+                </div>
+              </div>
+              </a>
+        </div>
+        <div class="player manager man east starting steph">
+            <a href="profile-maks.html">
+            <div class="card">
+                <img src="img/img_avatar2.png" alt="Avatar" style="width:20%">
+                <div class="container">
+                  <h4><b>Вершинин Максим</b></h4> 
+                  <p>Manager</p> 
+                </div>
+              </div>
+            </a>
+        </div>
+        <div class="player manager man east starting steph">
+           <a href="profile-zaika.html">
+            <div class="card">
+                <img src="img/img_avatar2.png" alt="Avatar" style="width:20%">
+                <div class="container">
+                  <h4><b>Заика Дмитрий</b></h4> 
+                  <p>Manager</p> 
+                </div>
+              </div>
+              </a>
+          </div>
+        <div class="player developer mob cs starting steph">
+           <a href="profile-anton.html">
+            <div class="card">
+                <img src="img/img_avatar2.png" alt="Avatar" style="width:20%">
+                <div class="container">
+                  <h4><b>Прокудин Антон</b></h4> 
+                  <p>Mobile</p> 
+                </div>
+              </div>
+              </a>
+        </div>
+        
+        <div class="player design des  starting steph">
+           <a href="profile-ura.html">
+            <div class="card">
+                <img src="img/img_avatar2.png" alt="Avatar" style="width:20%">
+                <div class="container">
+                <h4 ><b>Лукьянец Юрий </b></h4> 
+                  <p>Design</p> 
+                </div>  
+              </div>
+             </a> 
+        </div>
+      </section>
+    </div>
+    </main>
+
+</div>
+  </div>
+  <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js'></script><script  src="./script.js"></script>
+    <script src="task.js"></script>
+
+
+
+
+
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+
+  searchBtn.addEventListener("click", ()=>{ 
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+  });
+
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+  </script>
+  <script src="teams.js"></script>
+  <script src="js.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+ <script src="js/bootstrap.js"></script>
+</body>
+</html>

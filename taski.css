@@ -1,0 +1,44 @@
+@charset "utf-8";
+body {
+  background: #fff;
+  padding: 20px;
+  font-family: Segoe UI Symbol;
+  color: #000;
+}
+
+.filter-control li {
+  list-style-type: none;
+}
+.filter-control li:not(.checked):before {
+  content: '☐';
+}
+.filter-control li.checked:before {
+  content: '☑';
+}
+
+.filteredblock > div {
+  color: #fff;
+}
+
+.filteredblock.a.b.c > div,
+.filteredblock.a-Chicago > .a-Chicago,
+.filteredblock.a-Houston > .a-Houston,
+.filteredblock.a-Dallas > .a-Dallas,
+.filteredblock.b-Chicago > .b-Chicago,
+.filteredblock.b-Houston > .b-Houston,
+.filteredblock.b-Dallas > .b-Dallas,
+.filteredblock.c-beer > .c-beer,
+.filteredblock.c-whiskey > .c-whiskey {
+  color: #000;
+}
+
+.filteredblock:not(.a):not(.a-Chicago) > .a-Chicago,
+.filteredblock:not(.a):not(.a-Houston) > .a-Houston,
+.filteredblock:not(.a):not(.a-Dallas) > .a-Dallas,
+.filteredblock:not(.b):not(.b-Chicago) > .b-Chicago,
+.filteredblock:not(.b):not(.b-Houston) > .b-Houston,
+.filteredblock:not(.b):not(.b-Dallas) > .b-Dallas,
+.filteredblock:not(.c):not(.c-beer) > .c-beer,
+.filteredblock:not(.c):not(.c-whiskey) > .c-whiskey {
+  color: #fff;
+}
